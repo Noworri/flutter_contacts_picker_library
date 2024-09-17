@@ -3,7 +3,7 @@
 
 Interact with native OS contact pickers using Flutter
 
-**Note:** This plugin requires at least Kotlin 1.5.0 to compile. See ([#38 (comment)](https://github.com/DRSchlaubi/contact_picker/issues/38#issuecomment-871212051) for more information)
+**Note:** This plugin requires at least Kotlin 1.4.0 to compile
 
 Web demo: https://fcp.mik.wtf/
 
@@ -17,7 +17,7 @@ Web demo: https://fcp.mik.wtf/
 Grab contact.
 ```dart
 final PhoneContact contact =
-                    await FlutterContactPicker.pickPhoneContact();
+    await FlutterContactPicker.pickPhoneContact();
 ```
 
 For more info read the docs or take a look at the example
@@ -28,7 +28,7 @@ For more info read the docs or take a look at the example
 - Support Flutter Web
 
 ## Permissions
-If you target Android 11+ (API 30+) you need to obtain the `android.permission.READ_CONTACTS` permission, which is declared as a library permission [here](https://github.com/DRSchlaubi/contact_picker/blob/main/contact_picker/android/src/main/AndroidManifest.xml#L3) this permission will be requested automatically if the `askForPermission` parameter is true.
+If you target Android 11+ (API 30+) you need to obtain the `android.permission.READ_CONTACTS` permission, which is declared as a library permission [here](https://github.com/DRSchlaubi/contact_picker/blob/master/android/src/main/AndroidManifest.xml#L3) this permission will be requested automatically if the `askForPermission` parameter is true.
 
 Alternatively you can request the permission manually with [FlutterContactPicker.requestPermission()](https://pub.dev/documentation/fluttercontactpicker/latest/fluttercontactpicker/FlutterContactPicker/requestPermission.html) or check with [FlutterContactPicker.hasPermission()](https://pub.dev/documentation/fluttercontactpicker/latest/fluttercontactpicker/FlutterContactPicker/hasPermission.html)
 
@@ -37,7 +37,7 @@ Alternatively you can request the permission manually with [FlutterContactPicker
 
 ```dart
 final FullContact contact =
-                    await FlutterContactPicker.pickFullContact();
+    await FlutterContactPicker.pickFullContact();
 ```
 
 ### Obtain profile picture
