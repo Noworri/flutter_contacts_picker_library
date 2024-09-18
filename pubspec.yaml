@@ -5,14 +5,14 @@ git: https://github.com/DRSchlaubi/contact_pickercop
 homepage: https://github.com/DRSchlaubi/contact_picker
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
+  sdk: ">=3.0.2 <4.0.0"
   flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  contact_picker_platform_interface: ^5.0.0
-  contact_picker_web: ^5.0.0
+  contact_picker_platform_interface: ^4.7.0
+  contact_picker_web: ^4.7.0
 
 dev_dependencies:
   flutter_test:
